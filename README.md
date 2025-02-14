@@ -1,5 +1,7 @@
 # AngularForms
 
+## [Lessons from Medium article](https://medium.com/@FullStackSoftwareDeveloper/mastering-angular-18-forms-reactive-vs-template-driven-approaches-041fa657ce23)
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
 
 ## Development server
@@ -57,3 +59,4 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+"# angular-forms-app"

@@ -1,0 +1,5 @@
+{
+  "prettier.printWidth": 300,
+  "html.format.wrapAttributes": "force-aligned",
+  "prettier.htmlWhitespaceSensitivity": "css"
+}

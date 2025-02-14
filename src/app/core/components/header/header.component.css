@@ -1,0 +1,14 @@
+.nav-links {
+  display: flex;
+  padding: 10px 20px;
+  margin: 0;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  background: #383737;
+  color: #f4f4f4;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #f4f4f4;
+}

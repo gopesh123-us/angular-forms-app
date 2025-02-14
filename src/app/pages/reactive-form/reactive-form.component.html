@@ -1,0 +1,22 @@
+<div class="form">
+  <form class="main-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <h1>Login Form</h1>
+    <div>
+      <label for="username">Username:&nbsp;</label>
+      <input id="username" formControlName="username" />
+      <div *ngIf="loginForm.get('username')!.invalid && loginForm.get('username')!.touched">
+        <small *ngIf="loginForm.get('username')!.hasError('required')">Username is required</small>
+        <small *ngIf="loginForm.get('username')!.hasError('minlength')">Username must be at least 3 characters long </small>
+      </div>
+    </div>
+    <div>
+      <label for="password">Password: &nbsp;</label>
+      <input id="password" type="password" formControlName="password" />
+      <div *ngIf="loginForm.get('password')!.invalid && loginForm.get('password')!.touched">
+        <small *ngIf="loginForm.get('password')!.hasError('required')">Password is required</small>
+        <small *ngIf="loginForm.get('password')!.hasError('minlength')">Password must be at least 6 characters long</small>
+      </div>
+    </div>
+    <button class="btn btn-info" type="submit">Login</button>
+  </form>
+</div>
