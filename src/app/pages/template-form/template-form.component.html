@@ -1,1 +1,22 @@
-<p>template-form works!</p>
+<div class="form">
+  <form class="main-form" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+    <h1>Template Login Form</h1>
+    <div>
+      <label for="username">Username <span class="required">*</span>&nbsp;</label>
+      <input class="form-control input" type="text" name="username" id="username" ngModel required minlength="3" />
+      <div *ngIf="loginForm.controls.username?.invalid && loginForm.controls.username?.touched">
+        <small *ngIf="loginForm.controls.username?.errors?.['required']">Username is required</small>
+        <small *ngIf="loginForm.controls.username?.errors?.['minlength']">Username must be 3 characters long</small>
+      </div>
+    </div>
+    <div>
+      <label for="password">Password <span class="required">*</span>&nbsp;</label>
+      <input class="form-control input" name="password" id="password" type="password" ngModel required minlength="6" />
+      <div *ngIf="loginForm.controls.password?.['invalid'] && loginForm.controls.password?.['touched']">
+        <small *ngIf="loginForm.controls.password?.errors?.['required']">Password is required</small>
+        <small *ngIf="loginForm.controls.password?.errors?.['minlength']">Password must be 6 characters long</small>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid || loginForm.pristine">Login</button>
+  </form>
+</div>

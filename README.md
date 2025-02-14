@@ -2,6 +2,8 @@
 
 ## [Lessons from Medium article](https://medium.com/@FullStackSoftwareDeveloper/mastering-angular-18-forms-reactive-vs-template-driven-approaches-041fa657ce23)
 
+This is a conceptual app which is mainly inspired from an article on Medium. It implements a good folder structure in angular, with layout, and implements angular 19 routing, with angular forms - both reactive and template form.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
 
 ## Development server
