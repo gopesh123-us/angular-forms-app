@@ -3,6 +3,7 @@ import { LayoutComponent } from './layouts/layout/layout.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [LayoutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
