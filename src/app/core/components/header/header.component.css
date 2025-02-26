@@ -1,3 +1,6 @@
+nav {
+  height: 55px;
+}
 .nav-links {
   display: flex;
   padding: 10px 20px;
